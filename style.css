@@ -42,7 +42,7 @@ html {
     }
 
     span {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: 700;
       color: #fff;
 
@@ -61,11 +61,13 @@ html {
       gap: 2rem;
 
       img {
+        height: 30rem;
+        width: 30rem;
       }
 
       span {
-        font-size: 3rem;
-        text-align: center;
+        font-size: 2.8rem;
+        text-align: justify;
         width: 100%;
       }
     }
