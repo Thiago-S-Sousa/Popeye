@@ -147,35 +147,42 @@ html {
   align-items: center;
 
   width: 100%;
-  padding: 5rem 0;
+  padding: 6rem 0;
   background-color: #f7f7f7;
 
   .cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    /* gap: 2rem; */
 
     width: 100%;
 
     #tradition {
       background-image: url(./images/product3.png);
+      text-align: start;
     }
     #quality {
       background-image: url(./images/product1.png);
+      text-align: center;
+    }
+    #flavor {
+      background-image: url(./images/product4.png);
+      text-align: center;
     }
     #variety {
       background-image: url(./images/product2.png);
+      text-align: end;
     }
 
     .card {
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      /* text-align: center; */
 
       height: 35rem;
-      width: 35rem;
+      width: 23%;
 
       border-radius: 0.5rem;
 
@@ -183,30 +190,35 @@ html {
       background-repeat: no-repeat;
       background-size: cover;
 
+      box-shadow: 0.4rem 0.4rem 2rem #000;
+
       .intro {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        padding: 0 4rem;
+        /* padding: 0 5rem; */
         height: 100%;
         width: 100%;
 
         border-radius: 0.5rem;
 
-        background-color: transparent;
+        background-color: #0000003b;
         transition: all 0.5s;
 
         h1,
         p {
           color: #fff;
-          font-size: 4.5rem;
           font-weight: 800;
+        }
+
+        h1 {
+          font-size: 4.5rem;
         }
 
         p {
           display: none;
-          font-size: 4rem;
+          font-size: 3.8rem;
         }
       }
 
@@ -346,9 +358,19 @@ html {
 
   .quality {
     .cards {
+      justify-content: center;
       flex-direction: column;
+      gap: 2rem;
+
+      #tradition,
+      #quality,
+      #flavor,
+      #variety {
+        text-align: center;
+      }
 
       .card {
+        height: 38rem;
         width: 90%;
 
         .intro {
