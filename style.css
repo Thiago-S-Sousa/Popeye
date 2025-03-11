@@ -91,13 +91,13 @@ html {
   height: calc(100dvh - 7rem);
   width: 100%;
 
-  /* background-image: url(./images/banner.png);
-  background-position: top center;
+  background-image: url(https://medicina.ribeirao.br/wp-content/uploads/2023/09/acai-com-granola-e-banana.jpeg.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
 
   aside {
     display: flex;
@@ -105,7 +105,7 @@ html {
     justify-content: center;
     align-items: center;
 
-    background-color: transparent;
+    background-color: #0000003b;
 
     padding: 0 5rem;
     height: calc(100dvh - 7rem);
@@ -114,6 +114,7 @@ html {
     img {
       height: 35rem;
       width: 35rem;
+      margin-bottom: -4rem;
     }
 
     #hash-text {
@@ -125,7 +126,7 @@ html {
 
     #hash,
     #text {
-      color: #a6978a;
+      color: #f7f7f7;
       font-size: 7rem;
     }
 
@@ -323,13 +324,14 @@ html {
   }
 
   .banner {
-    /* background-position: center center;
-    background-attachment: scroll; */
+    background-position: center center;
+    background-attachment: scroll;
 
     aside {
       img {
         height: 30rem;
         width: 30rem;
+        margin-bottom: -2rem;
       }
 
       #hash-text {
@@ -338,7 +340,7 @@ html {
 
       #hash,
       #text {
-        font-size: 4.5rem;
+        font-size: 4rem;
       }
 
       #text {
