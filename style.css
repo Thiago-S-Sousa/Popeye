@@ -216,15 +216,18 @@ html {
     padding: 1.5rem 0;
 
     img {
-      height: 8rem;
-      width: 8rem;
+      height: 7rem;
+      width: 7rem;
     }
 
     #navbar {
       display: block;
       font-size: 4rem;
-      color: #f7f7f7;
       background-color: transparent;
+
+      #icon {
+        color: #f7f7f7;
+      }
     }
 
     nav {
@@ -236,7 +239,7 @@ html {
 
       height: 100dvh;
       width: 100%;
-      background-color: #61287d;
+      background-color: #f7f7f7;
       top: 0;
       right: -100%;
       transition: all 0.5s;
@@ -244,6 +247,7 @@ html {
 
       .xmark {
         position: absolute;
+        color: #000;
 
         top: 0;
         right: 0;
@@ -260,10 +264,10 @@ html {
         gap: 4rem;
 
         font-size: 2.4rem;
-        font-weight: 500;
+        font-weight: 600;
 
         li {
-          color: #f7f7f7;
+          color: #000;
         }
 
         li:hover {
