@@ -97,8 +97,6 @@ html {
   background-size: cover;
   background-attachment: fixed;
 
-  /* background-color: #f7f7f7; */
-
   aside {
     display: flex;
     flex-direction: column;
@@ -324,9 +322,6 @@ html {
   }
 
   .banner {
-    background-position: center center;
-    background-attachment: scroll;
-
     aside {
       img {
         height: 30rem;
