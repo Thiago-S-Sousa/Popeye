@@ -12,44 +12,117 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 1rem 0;
+  width: 100%;
+
+  background-color: #61287d;
+
+  img {
+    height: 6rem;
+    width: 6rem;
+
+    background-color: #f7f7f7;
+    border-radius: 50%;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+
+      li,
+      a {
+        list-style-type: none;
+        color: #f7f7f7;
+      }
+    }
+
+    #internal-links {
+      font-size: 1.4rem;
+      font-weight: 700;
+      gap: 6rem;
+
+      li {
+        transition: 0.2s;
+      }
+
+      li:hover {
+        color: #f22248;
+        transition: 0.2s;
+      }
+    }
+
+    #internal-links:hover {
+      cursor: pointer;
+    }
+
+    #external-links {
+      font-size: 3.4rem;
+      gap: 2rem;
+
+      li:hover,
+      a:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  min-height: 100dvh;
+  height: calc(100dvh - 7rem);
   width: 100%;
 
-  background-image: url(./images/backgroundbanner.png);
-  background-position: center center;
+  background-image: url(./images/banner.png);
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
   aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
 
-    background-color: #ffffff28;
+    background-color: #ffffff50;
 
     padding: 0 5rem;
-    min-height: 100dvh;
+    height: calc(100dvh - 7rem);
     width: 100%;
 
-    img {
-      height: 35rem;
-      width: 35rem;
+    #hash {
+      color: #f2e6d0;
+      font-size: 10rem;
+      background-color: transparent;
     }
 
-    span {
-      font-size: 3.5rem;
+    #text {
+      font-size: 10rem;
       font-weight: 700;
-      color: #fff;
+      color: #f2e6d0;
 
       line-height: 1.4;
+      letter-spacing: -1rem;
 
-      width: 60rem;
+      width: fit-content;
     }
   }
 }
@@ -139,22 +212,113 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-  .banner {
-    aside {
-      flex-direction: column;
-      gap: 2rem;
-      padding: 5rem 2rem;
+  .header {
+    padding: 1.5rem 0;
 
-      img {
-        height: 30rem;
-        width: 30rem;
+    img {
+      height: 8rem;
+      width: 8rem;
+    }
+
+    #navbar {
+      display: block;
+      font-size: 4rem;
+      color: #f7f7f7;
+      background-color: transparent;
+    }
+
+    nav {
+      position: fixed;
+
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 0rem;
+
+      height: 100dvh;
+      width: 100%;
+      background-color: #61287d;
+      top: 0;
+      right: -100%;
+      transition: all 0.5s;
+      opacity: 0.8;
+
+      .xmark {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        margin: 2.5rem 6.5rem 0 0;
       }
 
-      span {
-        font-size: 2.8rem;
-        text-align: justify;
+      ul {
         width: 100%;
-        padding: 0 4rem;
+        text-align: center;
+      }
+
+      #internal-links {
+        flex-direction: column;
+        gap: 4rem;
+
+        font-size: 2.4rem;
+        font-weight: 500;
+
+        li {
+          color: #f7f7f7;
+        }
+
+        li:hover {
+          color: #f22248;
+        }
+      }
+
+      #internal-links:hover {
+        cursor: none;
+      }
+
+      #external-links {
+        font-size: 4.2rem;
+
+        li:hover,
+        a:hover {
+          color: #f22248;
+        }
+
+        .fa-whatsapp {
+          color: #25d366;
+        }
+
+        .fa-instagram {
+          color: #e4405f;
+        }
+
+        .fa-facebook {
+          color: #1877f2;
+        }
+      }
+    }
+
+    nav.active {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  .banner {
+    /* background-position: bottom center; */
+    /* background-attachment: scroll; */
+
+    aside {
+      #hash {
+        font-size: 5rem;
+      }
+
+      #text {
+        font-size: 4rem;
+        /* text-align: center; */
+        font-weight: 800;
+        letter-spacing: normal;
+        width: fit-content;
+        /* padding: 0 4rem; */
       }
     }
   }
