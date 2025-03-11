@@ -88,14 +88,16 @@ html {
   justify-content: center;
   align-items: center;
 
-  min-height: 100dvh;
+  height: calc(100dvh - 7rem);
   width: 100%;
 
-  background-image: url(./images/banner.png);
+  /* background-image: url(./images/banner.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+
+  background-color: #f7f7f7;
 
   aside {
     display: flex;
@@ -103,10 +105,10 @@ html {
     justify-content: center;
     align-items: center;
 
-    background-color: #ffffff50;
+    background-color: transparent;
 
     padding: 0 5rem;
-    min-height: 100dvh;
+    height: calc(100dvh - 7rem);
     width: 100%;
 
     img {
@@ -123,8 +125,8 @@ html {
 
     #hash,
     #text {
-      color: #000000c0;
-      font-size: 8rem;
+      color: #a6978a;
+      font-size: 7rem;
     }
 
     #hash {
@@ -321,13 +323,17 @@ html {
   }
 
   .banner {
-    background-position: center center;
-    background-attachment: scroll;
+    /* background-position: center center;
+    background-attachment: scroll; */
 
     aside {
       img {
         height: 30rem;
         width: 30rem;
+      }
+
+      #hash-text {
+        width: 100%;
       }
 
       #hash,
@@ -336,12 +342,7 @@ html {
       }
 
       #text {
-        /* font-size: 4rem; */
-        /* text-align: center; */
-        font-weight: 800;
         letter-spacing: -0.5rem;
-        /* width: fit-content; */
-        /* padding: 0 4rem; */
       }
     }
   }
