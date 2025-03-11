@@ -154,24 +154,23 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 2rem; */
 
     width: 100%;
 
     #tradition {
-      background-image: url(./images/product3.png);
+      background-image: url(./images/prod1.png);
       text-align: start;
     }
     #quality {
-      background-image: url(./images/product1.png);
+      background-image: url(./images/prod2.png);
       text-align: center;
     }
     #flavor {
-      background-image: url(./images/product4.png);
+      background-image: url(./images/prod3.png);
       text-align: center;
     }
     #variety {
-      background-image: url(./images/product2.png);
+      background-image: url(./images/prod4.png);
       text-align: end;
     }
 
@@ -179,7 +178,6 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-      /* text-align: center; */
 
       height: 35rem;
       width: 23%;
@@ -197,7 +195,6 @@ html {
         justify-content: center;
         align-items: center;
 
-        /* padding: 0 5rem; */
         height: 100%;
         width: 100%;
 
@@ -206,28 +203,18 @@ html {
         background-color: #0000003b;
         transition: all 0.5s;
 
-        h1,
-        p {
-          color: #fff;
-          font-weight: 800;
-        }
-
-        h1 {
-          font-size: 4.5rem;
-        }
-
         p {
           display: none;
+
           font-size: 3.8rem;
+          font-weight: 800;
+          color: #fff;
         }
       }
 
       .intro:hover {
         cursor: default;
         transition: all 0.5s;
-        h1 {
-          display: none;
-        }
         p {
           display: block;
         }
@@ -360,7 +347,7 @@ html {
     .cards {
       justify-content: center;
       flex-direction: column;
-      gap: 2rem;
+      gap: 2.5rem;
 
       #tradition,
       #quality,
