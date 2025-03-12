@@ -7,30 +7,29 @@
       src="https://kit.fontawesome.com/9c7d743b7c.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/benefit.css" />
     <title>Revendas Popeye Açai</title>
   </head>
   <body>
-    <header class="header">
-      <img
-        src="./images/logopopeye.png"
-        alt="logo popeye açaí e vitaminas"
-        id="logo"
-      />
-      <aside id="navbar">
+    <header>
+      <img src="./images/logopopeye.png" alt="logo popeye açaí e vitaminas" />
+      <aside class="navbar">
         <i class="fa-solid fa-bars" id="icon"></i>
       </aside>
-      <nav id="menu">
-        <aside id="navbar" class="xmark">
+      <nav>
+        <aside class="navbar" id="xmark">
           <i class="fa-solid fa-xmark"></i>
         </aside>
-        <ul id="internal-links">
+        <ul class="internal-links">
           <li>Home</li>
           <li>Peça aqui</li>
           <li>Produtos</li>
           <li>Contato</li>
         </ul>
-        <ul id="external-links">
+        <ul class="external-links">
           <li>
             <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
           </li>
@@ -47,39 +46,44 @@
         </ul>
       </nav>
     </header>
-    <section class="banner">
-      <aside>
-        <img src="./images/logopopeye.png" alt="logo Popeye Açai e Vitaminas" />
-        <span id="hash-text">
-          <i class="fa-solid fa-hashtag" id="hash"></i>
-          <span id="text">vempropopeye</span>
-        </span>
-      </aside>
-    </section>
-    <section class="quality">
-      <aside class="cards">
-        <aside class="card" id="tradition">
-          <span class="intro">
-            <p>Tradição</p>
+    <main>
+      <section class="banner">
+        <aside>
+          <img
+            src="./images/logopopeye.png"
+            alt="logo Popeye Açai e Vitaminas"
+          />
+          <span id="hash-text">
+            <i class="fa-solid fa-hashtag" id="hash"></i>
+            <span id="text">vempropopeye</span>
           </span>
         </aside>
-        <aside class="card" id="quality">
-          <span class="intro">
-            <p>Qualidade</p>
-          </span>
+      </section>
+      <section class="benefit">
+        <aside class="cards">
+          <aside class="card" id="tradition">
+            <span class="intro">
+              <p>Tradição</p>
+            </span>
+          </aside>
+          <aside class="card" id="quality">
+            <span class="intro">
+              <p>Qualidade</p>
+            </span>
+          </aside>
+          <aside class="card" id="flavor">
+            <span class="intro">
+              <p>Sabor</p>
+            </span>
+          </aside>
+          <aside class="card" id="variety">
+            <span class="intro">
+              <p>Variedade</p>
+            </span>
+          </aside>
         </aside>
-        <aside class="card" id="flavor">
-          <span class="intro">
-            <p>Sabor</p>
-          </span>
-        </aside>
-        <aside class="card" id="variety">
-          <span class="intro">
-            <p>Variedade</p>
-          </span>
-        </aside>
-      </aside>
-    </section>
+      </section>
+    </main>
     <script src="./main.js"></script>
   </body>
 </html>
