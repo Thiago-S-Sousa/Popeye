@@ -1,0 +1,82 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(100dvh - 7rem);
+  width: 100%;
+
+  background-image: url(../images/bannerpopeye.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0000003b;
+
+    padding: 0 5rem;
+    height: calc(100dvh - 7rem);
+    width: 100%;
+
+    img {
+      height: 35rem;
+      width: 35rem;
+      margin-bottom: -4rem;
+    }
+
+    #hash-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+    }
+
+    #hash,
+    #text {
+      color: #f7f7f7;
+      font-size: 7rem;
+    }
+
+    #hash {
+      background-color: transparent;
+    }
+
+    #text {
+      font-weight: 700;
+
+      line-height: 1.4;
+      letter-spacing: -1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    aside {
+      img {
+        height: 30rem;
+        width: 30rem;
+        margin-bottom: -2rem;
+      }
+
+      #hash-text {
+        width: 100%;
+      }
+
+      #hash,
+      #text {
+        font-size: 4rem;
+      }
+
+      #text {
+        letter-spacing: -0.5rem;
+      }
+    }
+  }
+}

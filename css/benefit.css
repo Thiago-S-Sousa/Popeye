@@ -1,0 +1,108 @@
+.benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 6rem 0;
+  background-color: #f7f7f7;
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    #tradition {
+      background-image: url(../images/prod1.png);
+      text-align: start;
+    }
+    #quality {
+      background-image: url(../images/prod2.png);
+      text-align: center;
+    }
+    #flavor {
+      background-image: url(../images/prod3.png);
+      text-align: center;
+    }
+    #variety {
+      background-image: url(../images/prod4.png);
+      text-align: end;
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 35rem;
+      width: 24%;
+
+      border-radius: 0.5rem;
+
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      box-shadow: 0.4rem 0.4rem 2rem #000;
+
+      .intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+        width: 100%;
+
+        border-radius: 0.5rem;
+
+        background-color: #0000003b;
+        transition: all 0.5s;
+
+        p {
+          display: none;
+
+          font-size: 3.8rem;
+          font-weight: 800;
+          color: #fff;
+        }
+      }
+
+      .intro:hover {
+        cursor: default;
+        transition: all 0.5s;
+        p {
+          display: block;
+        }
+        background-color: #61287da9;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .benefit {
+    .cards {
+      justify-content: center;
+      flex-direction: column;
+      gap: 2.5rem;
+
+      #tradition,
+      #quality,
+      #flavor,
+      #variety {
+        text-align: center;
+      }
+
+      .card {
+        height: 38rem;
+        width: 90%;
+
+        .intro {
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+}
