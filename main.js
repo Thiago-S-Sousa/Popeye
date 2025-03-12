@@ -1,12 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const navbarToggle = document.getElementById("navbar");
-  const closeButton = document.querySelector("nav .xmark");
-  const menu = document.getElementById("menu");
+class Navbar {
+  constructor() {
+    this.menu = document.querySelector("nav");
+    this.navbarToggle = document.querySelector(".navbar");
+    this.closeButton = document.querySelector("nav #xmark");
 
-  function toggleNavbar() {
-    menu.classList.toggle("active");
+    this.addEventListeners();
   }
 
-  navbarToggle.addEventListener("click", toggleNavbar);
-  closeButton.addEventListener("click", toggleNavbar);
-});
+  toggleNavbar() {
+    this.menu.classList.toggle("active");
+  }
+
+  addEventListeners() {
+    if (this.navbarToggle) {
+      this.navbarToggle.addEventListener("click", () => this.toggleNavbar());
+    }
+    if (this.closeButton) {
+      this.closeButton.addEventListener("click", () => this.toggleNavbar());
+    }
+  }
+}
+
+// Inicializa a classe quando o DOM estiver carregado
+document.addEventListener("DOMContentLoaded", () => new Navbar());
