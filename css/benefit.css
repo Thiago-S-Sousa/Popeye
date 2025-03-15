@@ -15,19 +15,19 @@
     width: 100%;
 
     #tradition {
-      background-image: url(../images/prod1.png);
+      background-image: url(../images/prod-acai2.png);
       text-align: start;
     }
     #quality {
-      background-image: url(../images/prod2.png);
+      background-image: url(../images/prod-cupuacu1.jpg);
       text-align: center;
     }
     #flavor {
-      background-image: url(../images/prod3.png);
+      background-image: url(../images/prod-milk1.jpg);
       text-align: center;
     }
     #variety {
-      background-image: url(../images/prod4.png);
+      background-image: url(../images/prod-salada1.jpg);
       text-align: end;
     }
 
@@ -60,18 +60,31 @@
         background-color: #0000003b;
         transition: all 0.5s;
 
+        span,
+        p {
+          color: #fff;
+          font-weight: 800;
+        }
+
+        span {
+          font-size: 4rem;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+        }
+
         p {
           display: none;
-
-          font-size: 3.8rem;
-          font-weight: 800;
-          color: #fff;
+          font-size: 3.5rem;
+          padding: 0 2rem;
         }
       }
 
       .intro:hover {
         cursor: default;
         transition: all 0.5s;
+        span {
+          display: none;
+        }
         p {
           display: block;
         }
@@ -101,6 +114,15 @@
 
         .intro {
           padding: 0 2rem;
+        }
+
+        .intro:hover {
+          span {
+            display: block;
+          }
+          p {
+            display: none;
+          }
         }
       }
     }
