@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
 
-  height: calc(100dvh - 12dvh);
+  height: calc(100dvh - 7rem);
   width: 100%;
 
   background-image: url(../images/bannerpopeye.jpg);

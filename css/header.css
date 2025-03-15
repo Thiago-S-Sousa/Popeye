@@ -3,12 +3,10 @@ header {
   justify-content: space-around;
   align-items: center;
 
-  /* padding: 1rem 0; */
-  height: 12dvh;
+  padding: 1rem 0;
   width: 100%;
 
   background-color: #61287d;
-  /* border: 0.1rem solid #f7f7f7; */
 
   img {
     height: 6rem;
@@ -73,7 +71,7 @@ header {
 
 @media only screen and (max-width: 768px) {
   header {
-    /* padding: 1.5rem 0; */
+    padding: 1.5rem 0;
 
     img {
       height: 7rem;
