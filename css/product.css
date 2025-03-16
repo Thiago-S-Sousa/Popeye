@@ -20,6 +20,7 @@
       display: flex;
       flex-direction: column;
 
+      text-align: start;
       font-weight: 800;
       color: #61287d;
 
@@ -27,13 +28,13 @@
 
       .title {
         font-size: 6rem;
-        text-align: start;
       }
 
       .subtitle {
         font-size: 8rem;
         font-family: "Dancing Script", cursive;
-        text-align: end;
+
+        padding-left: 40%;
         margin-top: -5rem;
       }
     }
