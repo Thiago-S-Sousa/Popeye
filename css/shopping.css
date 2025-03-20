@@ -1,0 +1,127 @@
+.shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100dvh;
+  width: 100%;
+
+  background-image: url(../images/back-shopp.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .back-shopp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+
+    background-color: #0000003b;
+
+    height: 100dvh;
+    width: 100%;
+
+    .buy,
+    .resale {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 3rem;
+
+      text-align: center;
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+        width: 8rem;
+
+        font-size: 4rem;
+        color: #f7f7f7;
+        background-color: #61287d;
+        border-radius: 50%;
+      }
+
+      span {
+        font-size: 2.6rem;
+        font-weight: 800;
+        letter-spacing: -0.2rem;
+        text-transform: uppercase;
+        color: #f7f7f7;
+      }
+
+      p {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: #f7f7f7;
+
+        padding: 0 10rem;
+      }
+
+      a {
+        font-size: 1.8rem;
+        font-weight: 800;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+
+        margin-top: 2rem;
+        padding: 2rem 4rem;
+        border: 0.2rem solid #61287d;
+        border-radius: 0.5rem;
+        color: #f7f7f7;
+        background-color: #ffffff56;
+        transition: all 0.3s;
+      }
+
+      a:hover {
+        cursor: pointer;
+        background-color: #61287d;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .shopping {
+    height: 120dvh;
+    background-position: top center;
+
+    .back-shopp {
+      height: 120dvh;
+      flex-direction: column;
+      padding: 2rem 0;
+      gap: 4rem;
+
+      .buy,
+      .resale {
+        gap: 1rem;
+        /* height: 100%; */
+
+        i {
+          height: 6rem;
+          width: 6rem;
+
+          font-size: 3rem;
+        }
+
+        span {
+          letter-spacing: -0.1rem;
+        }
+
+        p {
+          padding: 0;
+          width: 90%;
+        }
+
+        a {
+          font-size: 2rem;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+}
