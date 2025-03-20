@@ -95,7 +95,7 @@
 
       .buy,
       .resale {
-        gap: 1rem;
+        gap: 1.5rem;
 
         i {
           height: 6rem;
@@ -107,16 +107,18 @@
         span {
           font-weight: 700;
           letter-spacing: -0.1rem;
+          line-height: 1;
         }
 
         p {
           padding: 0;
           width: 90%;
+          line-height: 1;
         }
 
         a {
           font-size: 2rem;
-          padding: 1rem 2rem;
+          padding: 1.2rem 4rem;
         }
       }
     }
