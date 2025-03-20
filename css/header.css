@@ -34,6 +34,7 @@ header {
       li,
       a {
         list-style-type: none;
+        text-decoration: none;
         color: #f7f7f7;
       }
     }
@@ -43,11 +44,14 @@ header {
       font-weight: 700;
       gap: 6rem;
 
-      li {
+      li,
+      a {
         transition: 0.2s;
       }
 
-      li:hover {
+      li:hover,
+      a:hover,
+      a.active {
         color: #000000cb;
         transition: 0.2s;
       }
@@ -124,11 +128,14 @@ header {
         font-size: 2.4rem;
         font-weight: 600;
 
-        li {
+        li,
+        a {
           color: #000000cb;
         }
 
-        li:hover {
+        li:hover,
+        a:hover,
+        a.active {
           color: #61287d;
         }
       }
