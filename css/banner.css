@@ -59,8 +59,6 @@
 
 @media only screen and (max-width: 768px) {
   .banner {
-    height: calc(80dvh - 7rem);
-
     aside {
       img {
         height: 30rem;
