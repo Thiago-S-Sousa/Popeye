@@ -96,11 +96,11 @@
 
 @media only screen and (max-width: 768px) {
   .benefit {
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
     .cards {
       justify-content: center;
       flex-direction: column;
-      gap: 2.5rem;
+      gap: 1.5rem;
 
       #tradition,
       #quality,
@@ -115,6 +115,10 @@
 
         .intro {
           padding: 0 2rem;
+
+          span {
+            font-size: 3rem;
+          }
         }
 
         .intro:hover {

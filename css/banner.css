@@ -21,7 +21,8 @@
     background-color: #0000003b;
 
     padding: 0 5rem;
-    height: calc(100dvh - 7rem);
+    /* height: calc(100dvh - 7rem); */
+    height: 100%;
     width: 100%;
 
     img {
@@ -58,6 +59,8 @@
 
 @media only screen and (max-width: 768px) {
   .banner {
+    height: calc(80dvh - 7rem);
+
     aside {
       img {
         height: 30rem;
