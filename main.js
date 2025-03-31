@@ -59,3 +59,105 @@ class ScrollSpy {
 
 // Inicializando a funcionalidade
 new ScrollSpy("section", "header nav a");
+
+// ----- SCROLLREVEAL -----
+
+window.reveals = ScrollReveal({ reset: true });
+
+// ----- HEADER -----
+
+reveals.reveal(".logo", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "top",
+});
+
+reveals.reveal("#icon", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "right",
+});
+
+// reveals.reveal(".internal-links, .external-links", {
+//   duration: "2000",
+//   distance: "80px",
+//   delay: "150",
+//   origin: "right",
+// });
+
+// ----- BANNER -----
+
+reveals.reveal(".banner img, .banner #hash-text", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "bottom",
+});
+
+// ----- BENEFIT -----
+
+reveals.reveal(".benefit .card", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "bottom",
+});
+
+reveals.reveal(".benefit .intro span", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "top",
+});
+
+// ----- PRODUCT -----
+
+reveals.reveal(".product .text .title", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "left",
+});
+
+reveals.reveal(".product .text .subtitle, .product p, .product .img", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "right",
+});
+
+// ----- SHOPPING -----
+
+reveals.reveal(".back-shopp .buy", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "left",
+});
+
+reveals.reveal(".back-shopp .resale", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "right",
+});
+
+// ----- CONTACT -----
+
+reveals.reveal(".address .title, .address .subtitle, .address p", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "right",
+});
+
+// ----- FOOTER -----
+
+reveals.reveal("footer .box", {
+  duration: "2000",
+  distance: "80px",
+  delay: "150",
+  origin: "bottom",
+});

@@ -8,7 +8,7 @@ header {
 
   background-color: #61287d;
 
-  img {
+  .logo {
     height: 6rem;
     width: 6rem;
 
@@ -20,7 +20,7 @@ header {
     display: none;
   }
 
-  nav {
+  .nav-list {
     display: flex;
     justify-content: center;
     gap: 8rem;
@@ -77,7 +77,7 @@ header {
   header {
     padding: 1.5rem 0;
 
-    img {
+    .logo {
       height: 7rem;
       width: 7rem;
     }
@@ -92,8 +92,9 @@ header {
       }
     }
 
-    nav {
+    .nav-list {
       position: fixed;
+      z-index: 999;
 
       flex-direction: column;
       justify-content: space-evenly;
@@ -166,7 +167,7 @@ header {
       }
     }
 
-    nav.active {
+    .nav-list.active {
       top: 0;
       opacity: 1;
     }

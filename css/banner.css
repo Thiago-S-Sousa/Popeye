@@ -63,7 +63,7 @@
       img {
         height: 30rem;
         width: 30rem;
-        margin-bottom: -2rem;
+        /* margin-bottom: -2rem; */
       }
 
       #hash-text {

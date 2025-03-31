@@ -7,6 +7,7 @@
       src="https://kit.fontawesome.com/9c7d743b7c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/banner.css" />
@@ -19,11 +20,15 @@
   </head>
   <body>
     <header>
-      <img src="./images/logopopeye.png" alt="logo popeye açaí e vitaminas" />
+      <img
+        class="logo load-hidden"
+        src="./images/logopopeye.png"
+        alt="logo popeye açaí e vitaminas"
+      />
       <aside class="navbar">
-        <i class="fa-solid fa-bars" id="icon"></i>
+        <i class="fa-solid fa-bars load-hidden" id="icon"></i>
       </aside>
-      <nav>
+      <nav class="nav-list">
         <aside class="navbar" id="xmark">
           <i class="fa-solid fa-xmark"></i>
         </aside>
@@ -56,10 +61,11 @@
       <section class="banner" id="home">
         <aside>
           <img
+            class="load-hidden"
             src="./images/logopopeye.png"
             alt="logo Popeye Açai e Vitaminas"
           />
-          <span id="hash-text">
+          <span class="load-hidden" id="hash-text">
             <i class="fa-solid fa-hashtag" id="hash"></i>
             <span id="text">vempropopeye</span>
           </span>
@@ -67,27 +73,27 @@
       </section>
       <section class="benefit">
         <aside class="cards">
-          <aside class="card" id="tradition">
+          <aside class="card load-hidden" id="tradition">
             <span class="intro">
-              <span>Tradição</span>
+              <span class="load-hidden">Tradição</span>
               <p>Há uma década oferecendo o melhor açaí</p>
             </span>
           </aside>
-          <aside class="card" id="quality">
+          <aside class="card load-hidden" id="quality">
             <span class="intro">
-              <span>Qualidade</span>
+              <span class="load-hidden">Qualidade</span>
               <p>Incomparável, só o melhor</p>
             </span>
           </aside>
-          <aside class="card" id="flavor">
+          <aside class="card load-hidden" id="flavor">
             <span class="intro">
-              <span>Sabor</span>
+              <span class="load-hidden">Sabor</span>
               <p>Irresistível a cada colherada</p>
             </span>
           </aside>
-          <aside class="card" id="variety">
+          <aside class="card load-hidden" id="variety">
             <span class="intro">
-              <span>Variedade</span>
+              <span class="load-hidden">Variedade</span>
               <p>Oferecemos também milkshakes, saladas e sorvetes</p>
             </span>
           </aside>
@@ -96,10 +102,10 @@
       <section class="product" id="product">
         <aside class="text">
           <aside>
-            <span class="title">Nossos</span>
-            <span class="subtitle">produtos</span>
+            <span class="title load-hidden">Nossos</span>
+            <span class="subtitle load-hidden">produtos</span>
           </aside>
-          <p>
+          <p class="load-hidden">
             O Popeye Açaí & Vitaminas é sinônimo de saúde e sabor! Nossa seleção
             exclusiva de açaís e sobremesas geladas proporciona uma experiência
             nutritiva e deliciosa para todos os gostos. Oferecemos desde os
@@ -107,7 +113,7 @@
             milk-shakes, saladas de frutas e vitaminas, sempre com ingredientes
             frescos e selecionados.
           </p>
-          <p>
+          <p class="load-hidden">
             Para um encontro, uma reunião ou um momento de pausa, temos a
             escolha ideal para você. Nossos produtos seguem um rigoroso padrão
             de qualidade para oferecer o melhor em nutrição e sabor. Venha nos
@@ -115,7 +121,7 @@
             saúde e qualidade!
           </p>
         </aside>
-        <aside class="img">
+        <aside class="img load-hidden">
           <aside class="img-group">
             <aside id="product1"><span></span></aside>
             <aside id="product2"><span></span></aside>
@@ -135,7 +141,7 @@
       </section>
       <section class="shopping" id="shopping">
         <aside class="back-shopp">
-          <aside class="buy">
+          <aside class="buy load-hidden">
             <i class="fa-solid fa-house"></i>
             <span
               >Popeye Açaí <br />
@@ -148,7 +154,7 @@
             </p>
             <a href="https://wa.me/qr/IN44WPAKM2VBI1">Peça agora</a>
           </aside>
-          <aside class="resale">
+          <aside class="resale load-hidden">
             <i class="fa-solid fa-comments-dollar"></i>
             <span
               >Compre para <br />
@@ -165,9 +171,9 @@
       </section>
       <section class="contact" id="contact">
         <aside class="address">
-          <span class="title">Contato</span>
-          <span class="subtitle">Loja de fábrica</span>
-          <p>
+          <span class="title load-hidden">Contato</span>
+          <span class="subtitle load-hidden">Loja de fábrica</span>
+          <p class="load-hidden">
             St. J Norte, QNJ 26 Lote 06 - Taguatinga<br />Brasília - DF,
             72140-260<br />(61)99501-2270
           </p>
@@ -184,7 +190,7 @@
       </section>
     </main>
     <footer>
-      <aside class="box">
+      <aside class="box load-hidden">
         <img src="./images/logopopeye.png" alt="logo popeye açaí e vitaminas" />
         <aside>
           <span>Popeye Açaí & Vitaminas</span>
