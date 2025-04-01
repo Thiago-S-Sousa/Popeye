@@ -8,13 +8,45 @@
   scroll-behavior: smooth;
 }
 
-html.sr .load-hidden {
-  visibility: hidden;
-  /* overflow: hidden; */
-}
-
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
-  /* scrollbar-width: none; */
+
+  /* ----- ANIMATIONS ----- */
+
+  & .top-hidden {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translatey(-100%);
+    transition: ease 1.3s;
+  }
+
+  & .bottom-hidden {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translatey(50%);
+    transition: ease 1.3s;
+  }
+
+  & .left-hidden {
+    opacity: 0;
+    filter: blur(6px);
+    /* transform: translateX(-5%); */
+    transition: ease 1.3s;
+  }
+
+  & .right-hidden {
+    opacity: 0;
+    filter: blur(6px);
+    /* transform: translateX(5%); */
+    transition: ease 1.3s;
+  }
+
+  & .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translatey(0);
+    transition: ease 1.3s;
+  }
 }

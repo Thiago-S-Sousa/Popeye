@@ -80,7 +80,12 @@ footer {
     .copy {
       flex-direction: column;
       text-align: center;
+
+      a {
+        font-size: 1.6rem;
+      }
     }
+
     .box {
       flex-direction: column;
       text-align: center;

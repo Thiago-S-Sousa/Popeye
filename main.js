@@ -60,104 +60,26 @@ class ScrollSpy {
 // Inicializando a funcionalidade
 new ScrollSpy("section", "header nav a");
 
-// ----- SCROLLREVEAL -----
+// ------ ANIMATIONS ------
 
-window.reveals = ScrollReveal({ reset: true });
-
-// ----- HEADER -----
-
-reveals.reveal(".logo", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "top",
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
 });
 
-reveals.reveal("#icon", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "right",
-});
+const topElements = document.querySelectorAll(".top-hidden");
+const bottomElements = document.querySelectorAll(".bottom-hidden");
+const leftElements = document.querySelectorAll(".left-hidden");
+const rightElements = document.querySelectorAll(".right-hidden");
 
-// reveals.reveal(".internal-links, .external-links", {
-//   duration: "2000",
-//   distance: "80px",
-//   delay: "150",
-//   origin: "right",
-// });
+topElements.forEach((element) => myObserver.observe(element));
+bottomElements.forEach((element) => myObserver.observe(element));
+leftElements.forEach((element) => myObserver.observe(element));
+rightElements.forEach((element) => myObserver.observe(element));
 
-// ----- BANNER -----
-
-reveals.reveal(".banner img, .banner #hash-text", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "bottom",
-});
-
-// ----- BENEFIT -----
-
-reveals.reveal(".benefit .card", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "bottom",
-});
-
-reveals.reveal(".benefit .intro span", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "top",
-});
-
-// ----- PRODUCT -----
-
-reveals.reveal(".product .text .title", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "left",
-});
-
-reveals.reveal(".product .text .subtitle, .product p, .product .img", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "right",
-});
-
-// ----- SHOPPING -----
-
-reveals.reveal(".back-shopp .buy", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "left",
-});
-
-reveals.reveal(".back-shopp .resale", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "right",
-});
-
-// ----- CONTACT -----
-
-reveals.reveal(".address .title, .address .subtitle, .address p", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "right",
-});
-
-// ----- FOOTER -----
-
-reveals.reveal("footer .box", {
-  duration: "2000",
-  distance: "80px",
-  delay: "150",
-  origin: "bottom",
-});
+// -----------------------------------------
